@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voter Registration - Online Voting Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Voter Registration</h1>
+    <p>Register to vote in the National Blockchain Election</p>
+  </header>
+
+  <main>
+    <form class="form-container compact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="+91 XXXXX-XXXXX" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" rows="2" placeholder="Enter your address" required></textarea>
+
+      <label for="voterid">Voter ID</label>
+      <input type="text" id="voterid" placeholder="e.g., ABC1234567" required>
+
+      <label for="voterProof">Upload Voter ID Proof</label>
+      <input type="file" id="voterProof" accept="image/*,application/pdf" required>
+
+      <label for="pan">PAN Card Number</label>
+      <input type="text" id="pan" placeholder="e.g., ABCDE1234F" required>
+
+      <label for="panProof">Upload PAN Card</label>
+      <input type="file" id="panProof" accept="image/*,application/pdf" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Election Commission of Blockchain India</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Candidate Registration - National Blockchain Voting Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Candidate Registration</h1>
+    <p>Register yourself as a candidate for the upcoming election.</p>
+  </header>
+
+  <main>
+    <form class="form-container">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="address">Residential Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="party">Political Party Name:</label>
+      <input type="text" id="party" name="party" required>
+
+      <label for="undertaking">Proof of Undertaking (Upload Link):</label>
+      <input type="url" id="undertaking" name="undertaking" placeholder="Paste drive or URL link here" required>
+
+      <label for="id">Government ID (e.g. PAN, Aadhaar) Upload Link:</label>
+      <input type="url" id="id" name="id" placeholder="Paste ID proof link here" required>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Election Commission of Blockchain India</p>
+  </footer>
+</body>
+</html>
